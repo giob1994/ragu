@@ -1,4 +1,4 @@
-#![ragu]() Ragù
+#![ragu](https://github.com/giob1994/ragu/raw/master/icon.png) Ragù
 ##A project explorer for MATLAB
 
 [link to Google!](http://google.com)
