@@ -12,7 +12,7 @@ Ragu (stylized Ragù) is a little Julia module that lets you explore function ca
 
 🕶 Use [Sigma.js](https://github.com/jacomyal/sigma.js) to personalize your graph
 
-##Usage
+## Usage
 
 1. Place `Ragu.jl` , `ragu.html` and the `js` folder into your MATLAB project folder
 
