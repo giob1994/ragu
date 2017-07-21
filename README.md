@@ -2,7 +2,7 @@
    <img width=90% src="assets/example.png">
 </p>
 
-# 🍝 Ragu.jl  
+# 🍝 Ragu.jl
 
 ## A graphical project explorer for MATLAB
 
