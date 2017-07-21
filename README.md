@@ -1,20 +1,35 @@
 <p align="center">
-  <a href="https://github.com/giob1994/ragu">
-   <img width=170px src="assets/icon.png">
-  </a>
+   <img width=90% src="assets/example.png">
 </p>
 
-#Ragu.jl
+# 🍝 Ragu.jl  
 
-##A project explorer for MATLAB
+## A graphical project explorer for MATLAB
 
-Ragu is a little Julia module that lets you explore function calls in MATLAB projects with the help of [Sigma.js](https://github.com/jacomyal/sigma.js).
-<p align="center">
-   <img width=100% src="assets/example.png">
-</p>
+Ragu (stylized Ragù) is a little Julia module that lets you explore function calls in MATLAB projects with the help of [Sigma.js](https://github.com/jacomyal/sigma.js). It allows you to see the connections between the different function and `.m` files using a more friendly network graph.
 
-### Credits
+💅 Nodes are draggable by default
 
-Icons made by [Freepik](http://www.freepik.com) from [Flaticon](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
+🕶 Use [Sigma.js](https://github.com/jacomyal/sigma.js) to personalize your graph
 
+##Usage
+
+1. Place `Ragu.jl` , `ragu.html` and the `js` folder into your MATLAB project folder
+
+2. Open your shell/Terminal and start Julia with `julia`
+
+3. Execute
+
+   ```julia
+   julia> include("Ragu.jl")
+   julia> importall Ragu
+   julia> saveJsonGraph()
+   ```
+
+4. Open `ragu.html` with your (modern) browser of choice!
+
+
+## Contribute
+
+This is is a *minuscule* project, but if you have any idea on how to make it better, please issue a [pull request](https://github.com/giob1994/ragu/pulls) with your changes.
 

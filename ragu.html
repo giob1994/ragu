@@ -1,0 +1,60 @@
+<html>
+<head>
+<!-- START SIGMA IMPORTS -->
+<script src="./js/sigma.min.js"></script>
+<!-- END SIGMA IMPORTS -->
+<script src="./js/sigma.parsers.json.min.js"></script>
+<script src="./js/sigma.plugins.dragNodes.min.js"></script>
+</head>
+<body>
+<div id="container">
+  <style>
+    #graph-container {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
+  </style>
+  <div id="graph-container"></div>
+</div>
+<script>
+/**
+ * Here is just a basic example on how to properly display a graph
+ * exported from Gephi as a JSON file, with the JSON Exporter plugin from
+ * the Oxford Internet Institute:
+ *
+ *  > https://marketplace.gephi.org/plugin/json-exporter/
+ *
+ * The plugin sigma.parsers.json can load and parse the JSON graph file,
+ * and instantiate sigma when the graph is received.
+ *
+ * The object given as the second parameter is the base of the instance
+ * configuration object. The plugin will just add the "graph" key to it
+ * before the instanciation.
+ */
+
+ // Enter your JSON filename:
+
+ var jsonfile = 'ragu.json'
+
+ // Instantiate sigma:
+
+ s = new sigma({
+   container: 'graph-container'
+ });
+
+sigma.parsers.json(
+  jsonfile,
+  s,
+  function() {
+    s.refresh();
+  }
+);
+
+var dragListener = sigma.plugins.dragNodes(s, s.renderers[0]);
+
+</script>
+</body>
+</html>

@@ -1,6 +1,8 @@
 module Ragu
 
-function saveJsonGraph(json_name="graph.json")
+export readSource, saveJsonGraph
+
+function saveJsonGraph(json_name="ragu.json")
 
   source_network = readSource("")
   json_network = makeSourceJson(source_network)
